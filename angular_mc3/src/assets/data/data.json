@@ -1,0 +1,40 @@
+{
+    "usuario":{
+    "nombre": "Federico R. Steinaker",
+    "localidad": "Rafaela, provincia de Santa Fe (Argentina)",
+    "edad": "31",
+    "profesion": "Full Stack Developer Jr",
+    "imagen": "assets/img/foto_cv.jpg",
+    "perfil": "Titular de SMART Servicios Informáticos, venta de equipos e insumos para trazabilidad y codificación en industrias. Diseño y desarrollo de etiquetas autoadhesivas para pymes. Técnico en informática, reparación y mantenimiento de equipos informáticos, sistemas de trazabilidad y pesaje. Diseñador gráfico, desarrollos de contenidos comunicacionales en formatos impresos y digitales para promocionar productos y servicios de empresas de la ciudad de Rafaela y la región."
+    },
+            "experiencia": [{
+                "empresa": "SMART Servicios Informáticos",
+                "comienzo": "Enero 2017",
+                "finalizacion": "Actualidad",
+                "descripcion": "Titular de una empresa en Rafaela. Venta y distribución de etiquetas autoadhesivas, tintas, equipamientos para codificación y trazabilidad. Asesoramiento a pequeñas y medianas empresas para rotulación de productos y diseño de imagen de marca. Diseño de cartelería, folletería, sitios web y edición de videos.",
+                "imagen": "assets/img/logos_trab.educ/smart_logo.png"
+            },
+            {
+                "empresa": "Shift Digital",
+                "comienzo": "Septiembre 2016",
+                "finalizacion": "Diciembre 2016",
+                "descripcion": "Atención al público. Instalación y reparación de computadoras, asesoramiento a clientes para la compra de equipos informáticos. Control de stock.",
+                "imagen": "assets/img/logos_trab.educ/shift_logo.png"
+            },
+            {
+                "empresa": "FDC Servicio Técnico",
+                "comienzo": "Enero 2014",
+                "finalizacion": "Agosto 2016",
+                "descripcion": "Instalación y reparación de computadoras, impresoras térmicas, controladores fiscales, balanzas electrónicas y puntos de ventas. Capacitación de personal para manejo de sistemas de facturación. Instalación y configuración de redes domésticas y pequeñas empresas. Encargado en tareas contables, logística y cobranzas.",
+                "imagen": "assets/img/logos_trab.educ/fdc_logo.png"
+            },
+            {
+                "empresa": "Helena “Alimentos sin gluten”",
+                "comienzo": "Julio 2013",
+                "finalizacion": "Noviembre 2013",
+                "descripcion": "Certificado en el “Programa Rafaela Emprende 2013” Diseño e implementación de piezas de packaging para productos alimenticios libre de gluten.",
+                "imagen": "assets/img/logos_trab.educ/helena_logo.png"
+            }]
+}
+
+
