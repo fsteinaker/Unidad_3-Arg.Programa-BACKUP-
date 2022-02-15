@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PorfolioService } from 'src/app/servicios/porfolio.service';
 
 @Component({
   selector: 'app-formacion',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formacion.component.css']
 })
 export class FormacionComponent implements OnInit {
-
-  constructor() { }
+  formacionList:any;
+  constructor(private datosPorfolio:PorfolioService) { }
 
   ngOnInit(): void {
+    this.datosPorfolio.ObtenerDatos().subscribe(data =>{
+      this.formacionList=data.formacion;
+    })
   }
 
 }

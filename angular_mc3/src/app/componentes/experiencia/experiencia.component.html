@@ -7,16 +7,16 @@
         </svg> Experiencia laboral</h2><img src=".\assets\icon\edit_icon.png" class="edit-icon" onclick="ventana_notificacion()" role="button"><br>            
 
         <ul>
-            <li ngFor="let experiencia of experienciaList">
+            <li *ngFor="let experiencia of experienciaList">
                 <div class="divisor-lugar-trab-educ">
                     <img class="isotipo2"
-                    [src]="experienciaList.experiencia.imagen"
+                    [src]="experiencia.imagen"
                     >
                         <div class="titulo-trab-educ">
-                            <h4 class="card-title-2"> {{experienciaList.experiencia.empresa}}</h4>                
-                            <h6 class="card-subtitle mb-2 text-muted">({{experienciaList.experiencia.inicio}} - {{experienciaList.experiencia.finalizacion}})</h6>
+                            <h4 class="card-title-2"> {{experiencia.empresa}}</h4>                
+                            <h6 class="card-subtitle mb-2 text-muted">({{experiencia.comienzo}} - {{experiencia.finalizacion}})</h6>
                         </div>
-                    <p class="card-text">{{experienciaList.experiencia.descripcion}}</p>
+                    <p class="card-text">{{experiencia.descripcion}}</p>
                 </div>           
             </li>
         </ul>

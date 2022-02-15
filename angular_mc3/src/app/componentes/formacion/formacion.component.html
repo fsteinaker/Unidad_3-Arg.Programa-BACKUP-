@@ -4,30 +4,19 @@
         <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
       </svg> Formación academica</h2><img src=".\assets\icon\edit_icon.png" class="edit-icon" onclick="ventana_notificacion()" role="button"><br>
           
-          <div class="divisor-lugar-trab-educ">
-                  <img class="isotipo2" src=".\assets\img\logo_argentina_programa.jpg">
-                      <div class="titulo-trab-educ">
-                          <h4 class="card-title-2"> Programador web Full Stack - Argentina programa</h4>                
-                          <h6 class="card-subtitle mb-2 text-muted">(Agosto 2021 - Actualidad)</h6>
-                      </div>
-                  <p class="card-text">Una capacitación en programación gratuita y virtual organizada en dos etapas:<br><br>#SéProgramar, en donde vas a aprender los fundamentos básicos para aprender a programar. #YoProgramo, en la que vas a profundizar tus conocimientos y capacitarte para convertirte en un programador web full stack junior.<br>Las dos etapas cuentan con una certificación conjunta del Ministerio de Desarrollo Productivo y la Cámara Argentina de la Industria de Software (CESSI). La segunda etapa tiene además la certificación del Instituto Nacional de Tecnología Industrial (INTI).</p>
-              </div>
+      <ul>
+        <li *ngFor="let formacion of formacionList">
+            <div class="divisor-lugar-trab-educ">
+                <img class="isotipo2"
+                [src]="formacion.imagen"
+                >
+                    <div class="titulo-trab-educ">
+                        <h4 class="card-title-2"> {{formacion.institucion}}</h4>                
+                        <h6 class="card-subtitle mb-2 text-muted">({{formacion.comienzo}} - {{formacion.finalizacion}})</h6>
+                    </div>
+                <p class="card-text">{{formacion.descripcion}}</p>
+            </div>           
+        </li>
+    </ul>
 
-              <div class="divisor-lugar-trab-educ">
-                  <img class="isotipo2" src=".\assets\img\logos_trab.educ\LogoUCSE.jpg">
-                      <div class="titulo-trab-educ">
-                          <h4 class="card-title-2"> Técnico Universitario en Diseño Gráfico</h4>                
-                          <h6 class="card-subtitle mb-2 text-muted">Universidad Católica de Santiago del Estero, Rafaela</h6>
-                      </div><br>
-                  <p class="card-text">Graduado en 2014 (Distinguido con mejor promedio por el Consejo Universitario de Rafaela).</p>
-              </div>
-
-              <div class="divisor-lugar-trab-educ">
-                  <img class="isotipo2" src=".\assets\img\logos_trab.educ\eet_logo.jpg">
-                      <div class="titulo-trab-educ">
-                          <h4 class="card-title-2" style="margin-top: -10px;"> Técnico en Informática profesional y personal<br>Polimodal en Economía y gestión de las organizaciones</h4>                
-                          <h6 class="card-subtitle mb-2 text-muted">Escuela de Enseñanza Técnica Nro. 460 “Guillermo Lehmann”, Rafaela</h6>
-                      </div><br><br><br><br>
-                  <p class="card-text">Graduado en 2008.</p>
-              </div>
       </div></div>

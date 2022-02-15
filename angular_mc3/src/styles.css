@@ -129,6 +129,13 @@ div#logo_argentina_programa{
 	font-style: oblique;
 }
 
+/*QUITAR LOS ITEMS DE LISTA DESORDENADA*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+
 /* ICONO Login-Logout  */
 #log-icon{
 	transition: all 0.3s linear;
@@ -307,4 +314,5 @@ div.divisor-lugar-trab-educ{
 					  transform: translateX(50%) rotate(45deg);
 					  border-radius: 2px;
 					}
+					
 					/* Fin - GRAFICOS DE HABILIDADES */					
