@@ -4,7 +4,9 @@ section, app-root.body, app-root.footer {
 	margin-left: auto;
 	margin-top: unset;
 	float: center;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Georama', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
@@ -64,7 +66,8 @@ height: 300px;
 #nombre_fede{
 	color: white;
 	font-size: 36pt;
-	font-weight: bolder;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
 	float: left;
 	margin-top: -65px;
 	margin-left: 10px;
