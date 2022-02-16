@@ -19,6 +19,10 @@ head{
 .card{
 	margin-right: auto;
 	margin-left: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
 	box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);;
 }
 
@@ -232,7 +236,11 @@ ul {
 	margin-left: 5px;
 }
 
-/*TITULO LUGAR TRABAJO*/
+/*CAJA DE TEXTO PARRAFO EXPERIENCIA-FORMACION*/
+p.card-text{
+	clear: both;
+}
+/*TITULO LUGAR TRABAJO-EDUCACION*/
 h4.card-title-2{
 	font-weight: 600;
 }
@@ -248,71 +256,49 @@ div.card{
 	margin-bottom: 20px;
 }
 
+.sangria-francesa{
+	padding-left: 25px;
+	padding-right: 10px;
+}
+
+/*TITULO LUGAR FORMACION*/
 div.titulo-trab-educ{
 	float: left;
-	margin-top: 10px;
-	margin-left: 5px;
+	margin-top: 8px;
+	margin-left: 0px;
 }
 
 div.divisor-lugar-trab-educ{
 	float: left;
 	margin: 10px;
+	margin-bottom: 20px;
 }
 
-					/* GRAFICOS DE HABILIDADES */					
-					.skills{
-					  width: 100%;
-					  max-width: 600px;
-					  padding: 0 20px;
-					  margin-left: auto;
-					  margin-right: auto;
+					/*GRAFICOS DE BARRA CIRCULAR*/
+					.skill{
+						margin-left: 8%;
+						margin-right: 2%;	
+						float: left;
+						margin-bottom: 30px;
+						width: 300px;
+						height: 400px;
 					}
 
-					.skill-name{
-					  font-size: 18px;
-					  font-weight: 700;
-					  text-transform: uppercase;
-					  margin: 20px 0;
+					.circulo-grafico{
+						text-align: center;
 					}
 
-					.skill-bar{
-					  height: 20px;
-					  background: #cacaca;
-					  border-radius: 8px;
+					.circle-progress{
+						margin-left: 100px;
 					}
 
-					.skill-per{
-					  height: 20px;
-					  background-color: #0fbcf9;
-					  border-radius: 8px;
-					  width: 0;
-					  transition: 1s linear;
-					  position: relative;
-					}
-
-					.skill-per::before{
-					  content: attr(per);
-					  position: absolute;
-					  padding: 4px 6px;
-					  background-color: #000;
-					  color: #fff;
-					  font-size: 12px;
-					  border-radius: 4px;
-					  top: -35px;
-					  right: 0;
-					  transform: translateX(50%);
-					}
-
-					.skill-per::after{
-					  content: '';
-					  position: absolute;
-					  width: 10px;
-					  height: 10px;
-					  background-color: #000;
-					  top: -16px;
-					  right: 0;
-					  transform: translateX(50%) rotate(45deg);
-					  border-radius: 2px;
+					.icono-grafico{
+						width: 42px;
+						margin-top: 12px;
+						margin-bottom: 12px;
 					}
 					
-					/* Fin - GRAFICOS DE HABILIDADES */					
+					.titulo_grafico, .detalle-grafico{
+						text-align: center;
+					}
+					/*FIN - GRAFICOS DE BARRA CIRCULAR*/

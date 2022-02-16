@@ -10,6 +10,9 @@ import { FormacionComponent } from './componentes/formacion/formacion.component'
 import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
 import { HttpClientModule } from '@angular/common/http';
 
+// Import ng-circle-progress
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +25,18 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    // Animacion grafico circular habilidades.component.html
+    NgCircleProgressModule.forRoot({
+      // set defaults here
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#78C000",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 800,
+    })
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]

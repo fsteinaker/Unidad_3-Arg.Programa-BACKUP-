@@ -1,19 +1,3 @@
-       //GRAFICO DE HABILIDADES ANIMADO//
-            $('.skill-per').each(function(){
-                    var $this = $(this);
-                    var per = $this.attr('per');
-                    $this.css("width",per+'%');
-                    $({animatedValue: 0}).animate({animatedValue: per},{
-                      duration: 1000,
-                              step: function(){
-                            $this.attr('per', Math.floor(this.animatedValue) + '%');
-                              },
-                              complete: function(){
-                                $this.attr('per', Math.floor(this.animatedValue) + '%');
-                                }
-                        });
-                 });
-
     //Carga el contenido de un archivo de texto//
     //y lo muestra en el parrafo//
     function showFile(input) {
@@ -55,10 +39,9 @@
 
 /*Funcion precionar enter para terminar edicion*/
     let textarea=document.getElementById("edit-acercade")
-    if (typeof foo !== 'undefined') {
     textarea.addEventListener('keyup', (e) => {
         logMessage('Key "${e.key}" released [event: keyup]');
         if (e.key=="Enter"){
             document.getElementById("edit-acercade").style.display="none"
         }
-    })};
+    });
