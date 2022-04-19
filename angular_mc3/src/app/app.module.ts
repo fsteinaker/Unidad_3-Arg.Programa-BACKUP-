@@ -12,6 +12,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 // Import ng-circle-progress
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
+import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,12 +23,15 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     PerfilComponent,
     ExperienciaComponent,
     FormacionComponent,
-    HabilidadesComponent
+    HabilidadesComponent,
+    IniciarSesionComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
     // Animacion grafico circular habilidades.component.html
     NgCircleProgressModule.forRoot({
       // set defaults here
